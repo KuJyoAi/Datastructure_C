@@ -16,7 +16,7 @@ typedef struct route {//线路
 }*proute;
 int RouteCnt = 0; //线路数
 proute* CreateRoutes(int num); //创建线路
-proute CreateRoute(int num); //创建线路
+proute CreateRoute(int num); //读入并创建线路
 proute AddNode(proute p, double len_pre, double len_next, char name_pre[10], char name[10]); //添加节点
 proute DeleteNode(proute p, char *name); //删除节点
 proute GetNeartest(char *s1, char *s2); //获取最近站点
